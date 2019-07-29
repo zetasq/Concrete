@@ -37,24 +37,24 @@
 #pragma mark - Casting
 
 #define ObjectIsKindOf(x, c) ({ \
-  let __val = x; \
+  id const __val = x; \
   (BOOL)([__val isKindOfClass:[c class]]); \
 })
 
 #define ObjectIsMemberOf(x, c) ({ \
-  let __val = x; \
+  id const __val = x; \
   (BOOL)([__val isMemberOfClass:[c class]]); \
 })
 
 /// Ensure that class is of certain kind
 #define DynamicCast(x, c) ({ \
-  let __val = x; \
+  id const __val = x; \
   (c *)(ObjectIsKindOf(__val, c) ? __val : nil); \
 })
 
 /// Ensure that class is of certain kind, assuming it is subclass restricted
 #define DynamicStrictCast(x, c) ({ \
-  let __val = x; \
+  id const __val = x; \
   (c *)(ObjectIsMemberOf(__val, c) ? __val : nil); \
 })
 
