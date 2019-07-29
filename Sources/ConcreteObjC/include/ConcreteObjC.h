@@ -9,3 +9,4 @@
 #import "../Scope.h"
 #import "../Enumeration.h"
 #import "../KeyPath.h"
+#import "../Swizzle.h"
