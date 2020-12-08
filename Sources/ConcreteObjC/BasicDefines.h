@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-#pragma mark - Type Infer
+#pragma mark - Type Inference
 
 #if defined(__cplusplus)
 
@@ -22,6 +22,11 @@
 #define var __auto_type
 
 #endif
+
+#pragma mark - Annotation
+
+#define OBJC_DIRECT_METHOD __attribute__((objc_direct))
+#define OBJC_DIRECT_MEMBERS __attribute__((objc_direct_members))
 
 #pragma mark - Static Variable
 
