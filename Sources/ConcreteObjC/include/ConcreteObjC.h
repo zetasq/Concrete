@@ -10,3 +10,4 @@
 #import "../Enumeration.h"
 #import "../KeyPath.h"
 #import "../Swizzle.h"
+#import "../SmartPointer.h"
